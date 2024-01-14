@@ -11,6 +11,10 @@ const annoucementSchema = mongoose.Schema({
         required: true,
         minLen: 2
     }
-})
+}, {
+    timestamps: true
+
+}
+)
 
 module.exports = mongoose.model("annoucementModel", annoucementSchema);
